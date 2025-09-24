@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { frFR } from "@clerk/localizations";
 import ReactQueryClientProvider from "@/components/react-query-client-provider";
+import CreateProfileOnSignIn from "@/components/create-profile";
 
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({
       <html lang="fr">
         <body >
           <ReactQueryClientProvider>
+            <CreateProfileOnSignIn />
             <Navbar />
             <div  className="max-w-7xl mx-auto pt-16 p-4 min-h-screen">{children}</div>
           </ReactQueryClientProvider>
