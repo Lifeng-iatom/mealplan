@@ -1,5 +1,9 @@
 import { availablePlans } from "@/lib/plan";
 
+
+
+
+
 export default function SubscriptionCard(){
     return (
         <div className="subscription-container">
